@@ -1,0 +1,24 @@
+From 4220dc9ce781c0ef18223620d6b70be9e26bdaae Mon Sep 17 00:00:00 2001
+From: Alistair Leslie-Hughes <leslie_alistair@hotmail.com>
+Date: Tue, 30 May 2023 05:40:31 +1000
+Subject: [PATCH] Updated vkd3d-shader patchset
+
+---
+ libs/vkd3d/libs/vkd3d-shader/preproc.l | 1 +
+ 1 file changed, 1 insertion(+)
+
+diff --git a/libs/vkd3d/libs/vkd3d-shader/preproc.l b/libs/vkd3d/libs/vkd3d-shader/preproc.l
+index 8e35e3555ba..94079696280 100644
+--- a/libs/vkd3d/libs/vkd3d-shader/preproc.l
++++ b/libs/vkd3d/libs/vkd3d-shader/preproc.l
+@@ -20,6 +20,7 @@
+ 
+ %{
+ 
++#include "preproc.h"
+ #include "preproc.tab.h"
+ 
+ #undef ERROR  /* defined in wingdi.h */
+-- 
+2.40.1
+
